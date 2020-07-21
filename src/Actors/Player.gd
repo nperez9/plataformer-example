@@ -4,6 +4,7 @@ export var stomp_impulse: float = 1000.0
 
 
 func _on_EnemyDetector_area_entered(area) -> void:
+	# Jump over an enemy logic
 	_velocity = calculate_stomp_velocity(_velocity, stomp_impulse)
 
 func _physics_process(delta: float) -> void:
